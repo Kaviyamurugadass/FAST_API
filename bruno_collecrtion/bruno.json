@@ -1,7 +1,8 @@
 {
   "version": "1",
-  "name": "New_bruno_collecrtion",
+  "name": "Task Manager API",
   "type": "collection",
+  "folders": [],
   "ignore": [
     "node_modules",
     ".git"

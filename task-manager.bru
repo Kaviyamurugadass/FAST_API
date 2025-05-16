@@ -1,0 +1,38 @@
+meta {
+  name: Task Manager API
+  type: http
+  seq: 1
+}
+
+# Get All Tasks
+get: http://localhost:8000/tasks
+name: Get All Tasks
+docs: Returns a list of all tasks
+
+# Create New Task
+post: http://localhost:8000/tasks
+name: Create New Task
+body: json {
+  "title": "New Task"
+}
+docs: Creates a new task with the given title
+
+# Update Task
+put: http://localhost:8000/tasks/1
+name: Update Task
+body: json {
+  "id": 1,
+  "title": "Updated Task",
+  "done": true
+}
+docs: Updates an existing task by ID
+
+# Delete Task
+delete: http://localhost:8000/tasks/1
+name: Delete Task
+docs: Deletes a task by ID
+
+# Home
+get: http://localhost:8000/
+name: Home
+docs: Returns API status message 
